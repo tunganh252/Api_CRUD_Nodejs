@@ -1,0 +1,39 @@
+{
+  "name": "api-train-react",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts --watch src",
+    "test": "jest --watch",
+    "coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/cors": "^2.8.6",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^4.17.1",
+    "@types/jest": "^24.0.18",
+    "@types/mongodb": "^3.3.2",
+    "@types/node": "^12.7.5",
+    "@types/reflect-metadata": "^0.1.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.2",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.19"
+  }
+}
